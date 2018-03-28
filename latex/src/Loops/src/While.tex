@@ -1,0 +1,119 @@
+\subsection{while}
+
+\begin{frame}
+    \frametitle{while}
+    
+        \begin{itemize}
+            \item A estrutura do \textit{while} é a seguinte:
+        \end{itemize}
+    
+        \begin{equation*}
+            \begin{aligned}
+                & \bm{while} ( \textit{condição de parada} ) \\
+                & \{ \\
+                & \qquad \textit{código} \\
+                & \} \\
+            \end{aligned}
+          \end{equation*}
+    
+\end{frame}
+    
+
+
+
+\subsubsection{Condição de Parada}
+
+\begin{frame}[fragile]
+    \frametitle{Condição de Parada}
+    
+        \begin{itemize}
+            
+            \item A condição de parada é executada no início de cada loop, ao contrário do \textbf{for}.
+
+            \item Caso a condição seja verdadeira (qualquer valor diferente de 0), o loop é interrompido.
+    
+            \item Exemplo:
+    
+        \end{itemize}
+    
+        \begin{lstlisting}[language=C]
+            int i = 0;
+    
+            while(i < 10)
+            {
+                ...     // O 'i' sera modificado aqui
+            }
+        \end{lstlisting}
+    
+\end{frame}
+
+
+
+\subsubsection{Exemplos}
+
+\begin{frame}[fragile]
+    \frametitle{Exemplos}
+    
+        \begin{itemize}
+            
+            \item Exemplos de loops \textbf{válidos}:
+    
+        \end{itemize}
+    
+        \begin{lstlisting}[language=C]
+            while(i < 10)
+
+            while(i >= 10)
+
+            while(i * i < 100)
+
+            while(sin(i) * sqrt(i) + i / 2.0 > 0.3)
+
+            while(i += 1, i < 10)
+
+            while(1)    // Loop infinito
+        \end{lstlisting}
+    
+\end{frame}
+
+
+
+
+
+
+\begin{frame}[fragile]
+    \frametitle{Exemplos}
+    
+        \begin{itemize}
+            
+            \item Exemplos de loops \textbf{inválidos}:
+    
+        \end{itemize}
+    
+        \begin{lstlisting}[language=C]
+            while(int i = 0)
+
+            while()
+
+            while(0)  // Loop valido, mas nunca 
+                         sera executado
+        \end{lstlisting}
+    
+\end{frame}
+
+
+
+
+
+\subsubsection{Exercícios}
+
+\begin{frame}[fragile]
+\frametitle{Exercícios}
+    
+    \begin{itemize}
+        
+        \item Encontrar e corrigir os erros do código 'while\_1.c'.
+
+    \end{itemize}
+    
+\end{frame}

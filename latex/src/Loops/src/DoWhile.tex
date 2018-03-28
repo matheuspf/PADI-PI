@@ -1,0 +1,130 @@
+\subsection{do ... while}
+
+\begin{frame}
+    \frametitle{while}
+    
+        \begin{itemize}
+            \item A estrutura do \textit{do ... while} é a seguinte:
+        \end{itemize}
+    
+        \begin{equation*}
+            \begin{aligned}
+                & \bm{do} \\
+                & \{ \\
+                & \qquad \textit{código} \\
+                & \} \bm{while}( \textit{condição de parada} ); \\
+            \end{aligned}
+          \end{equation*}
+    
+\end{frame}
+
+
+
+
+\subsubsection{Condição de Parada}
+
+\begin{frame}[fragile]
+    \frametitle{Condição de Parada}
+    
+        \begin{itemize}
+            
+            \item O funcionamento é igual ao do \textbf{while}.
+
+            \item A única diferença é que mesmo se a condição de parada sempre for falsa, o código dentro do loop será executado pelo menos uma vez
+    
+            \item Exemplo:
+    
+        \end{itemize}
+    
+        \begin{lstlisting}[language=C]
+            int i = 0;
+    
+            do
+            {
+                ...     // Esse codigo sera executado 
+                        // pelo menos uma vez
+            } while(i < 10);
+        \end{lstlisting}
+    
+\end{frame}
+
+
+
+
+\subsubsection{Exemplos}
+
+\begin{frame}[fragile]
+    \frametitle{Exemplos}
+    
+        \begin{itemize}
+            
+            \item Exemplos de loops \textbf{válidos}:
+    
+        \end{itemize}
+    
+        \begin{lstlisting}[language=C]
+            do
+            {
+
+            } while(i < 10);
+
+            do
+            {
+
+            } while(i * 2 > -15);
+
+            do
+            {
+                
+            } while(1);    // Loop infinito
+        \end{lstlisting}
+    
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]
+    \frametitle{Exemplos}
+    
+        \begin{itemize}
+            
+            \item Exemplos de loops \textbf{inválidos}:
+    
+        \end{itemize}
+    
+        \begin{lstlisting}[language=C]
+            do
+            {
+
+            } while(i < 10)  // Falta o ';'
+
+            do while(i * 2 > -15)
+            {
+                
+            }
+
+            do
+            {
+                
+            } while(0);  // Sera executado 
+                         // uma unica vez
+        \end{lstlisting}
+    
+\end{frame}
+
+
+
+
+\subsubsection{Exercícios}
+
+\begin{frame}[fragile]
+\frametitle{Exercícios}
+    
+    \begin{itemize}
+        
+        \item Encontrar e corrigir os erros do código 'doWhile\_1.c'.
+
+    \end{itemize}
+    
+\end{frame}

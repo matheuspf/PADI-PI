@@ -1,0 +1,176 @@
+\subsection{for}
+
+\begin{frame}
+\frametitle{for}
+
+    \begin{itemize}
+        \item A estrutura do \textit{for} é a seguinte:
+    \end{itemize}
+
+    \begin{equation*}
+        \begin{aligned}
+            & \bm{for} ( \textit{inicialização} ; \textit{condição de parada} ; \textit{incremento} ) \\
+            & \{ \\
+            & \qquad \textit{código} \\
+            & \} \\
+        \end{aligned}
+      \end{equation*}
+
+\end{frame}
+
+
+
+\subsubsection{inicialização}
+
+\begin{frame}[fragile]
+\frametitle{Inicialização}
+
+    \begin{itemize}
+        
+        \item É somente executado somente uma vez, logo no \textbf{início} do \textbf{for}.
+
+        \item É utilizado para inicializar as variáveis que serão utilizadas no loop.
+
+        \item Exemplo:
+
+    \end{itemize}
+
+    \begin{lstlisting}[language=C]
+        int i;
+
+        for(i = 0; ... ; ...)
+        {
+            ...
+        }
+    \end{lstlisting}
+
+\end{frame}
+
+
+
+
+\subsubsection{Condição de Parada}
+
+\begin{frame}[fragile]
+    \frametitle{Condição de Parada}
+    
+        \begin{itemize}
+            
+            \item É executada no \textbf{final} de cada iteração.
+    
+            \item Se seu valor é verdadeiro (qualquer valor diferente de 0), o \textbf{for} é finalizado.
+
+            \item Caso contrário, a próxima iteração continua normalmente.
+    
+            \item Exemplo:
+    
+        \end{itemize}
+    
+        \begin{lstlisting}[language=C]
+            int i;
+    
+            for(... ; i < 10 ; ...)
+            {
+                ...
+            }
+        \end{lstlisting}
+    
+\end{frame}
+
+
+
+
+
+
+\subsubsection{Incremento}
+
+\begin{frame}[fragile]
+    \frametitle{Incremento}
+    
+        \begin{itemize}
+            
+            \item É executada no \textbf{final} de cada iteração, \textbf{após} a condição de parada ser verificada.
+    
+            \item Usado para alterar o valor de variáveis após cada iteração.
+    
+            \item Exemplo:
+    
+        \end{itemize}
+    
+        \begin{lstlisting}[language=C]
+            int i;
+    
+            for(... ; ... ; ++i)
+            {
+                ...
+            }
+        \end{lstlisting}
+    
+\end{frame}
+
+
+
+
+\subsubsection{Exemplos}
+
+\begin{frame}[fragile]
+    \frametitle{Exemplos}
+    
+        \begin{itemize}
+            
+            \item Exemplos de loops \textbf{válidos}:
+    
+        \end{itemize}
+    
+        \begin{lstlisting}[language=C]
+    
+            for(i = 0 ; i < 10 ; ++i)
+
+            for(i = 0; i > -10; --i)
+
+            for(i = 2; i < 100; i *= 2)
+
+            for(; i < 100; ++i)
+
+            for(;;)    // Loop infinito
+
+            for(i = 0; ; i++)  // Outro loop infinito
+        \end{lstlisting}
+    
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+    \frametitle{Exemplos}
+    
+        \begin{itemize}
+            
+            \item Exemplos de loops \textbf{inválidos}:
+    
+        \end{itemize}
+    
+        \begin{lstlisting}[language=C]
+            for(i = 0, i < 10 ; ++i)
+
+            for(i = 0; i > -10)
+
+            for(int i = 2; i < 100; i *= 2)
+        \end{lstlisting}
+    
+\end{frame}
+
+
+
+\subsubsection{Exercícios}
+
+\begin{frame}[fragile]
+\frametitle{Exercícios}
+    
+    \begin{itemize}
+        
+        \item Encontrar e corrigir os erros do código 'for\_1.c'
+
+    \end{itemize}
+    
+\end{frame}
