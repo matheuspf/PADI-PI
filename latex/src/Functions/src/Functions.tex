@@ -1,0 +1,117 @@
+\subsection{Estrutura}
+
+\begin{frame}
+    \frametitle{Estrutura}
+    
+        \begin{itemize}
+            \item A estrutura de uma função em \textbf{C} é a seguinte:
+        \end{itemize}
+    
+        \begin{equation*}
+            \begin{aligned}
+                & \textit{tipo do retorno} \quad \textit{nome} \quad ( \textit{parâmetro 1}, \textit{parâmetro 2}, ...,  \textit{parâmetro n} ) \\
+                & \{ \\
+                & \qquad \textit{código} \\
+                & \\
+                & \qquad return ...   \\
+                & \} \\
+            \end{aligned}
+            \end{equation*}
+        
+\end{frame}
+
+
+
+\begin{slide}{Estrutura}
+
+    \item Da mesma forma que na definição matemática, uma função possui um conjunto de parâmetros de entrada e uma saída.
+
+    \item Porém, essa função pode ou não retornar um valor.
+
+    \item Cada \textit{parâmetro} consiste em um tipo e um nome de variável.
+
+    \item O \textit{tipo de retorno} da função nos diz o que essa função irá retornar.
+
+    \item Se esse tipo é \textbf{void}, a função não retorna valor algum.
+
+\end{slide}
+    
+
+
+
+\subsection{Declaração}
+
+\begin{slide}{Declaração}
+
+    \item Em \textbf{C}, podemos criar tanto a \textbf{declaração} de uma função quanto sua \textbf{definição}.
+
+    \item A declaração de uma função indica como a função será chamada e o que ela retornará.
+
+    \item Consiste somente no \textit{tipo do retorno}, \textit{nome}, e no \textbf{tipo} (o nome dos parâmetros é opcional) dos parâmetros.
+
+    \item Pode aparacer diversas vezes no mesmo programa, desde que todas as definições sejam iguais.
+
+\end{slide}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Declaração}
+    
+    \begin{itemize}
+        
+        \item Exemplo de declarações de funções:
+
+    \end{itemize}
+    
+    \begin{lstlisting}[language=C]
+        int funcao1 (int x);
+        int funcao1 (int);
+
+        void funcao2 (double);
+        
+        double funcao3 (int, double, char);
+    \end{lstlisting}
+    
+\end{frame}
+    
+
+
+
+
+\subsection{Definição}
+
+\begin{slide}{Definição}
+
+    \item A definição de uma função consiste no corpo da função, o que realmente será executado, assim como a sua declaração.
+
+    \item Pode aparecer somente uma vez no mesmo programa.
+
+    \item A declaração é inclusa nos headers (arquivos .h) e a definição nos arquivos fonte (arquivos .c).
+
+\end{slide}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Definição}
+        
+    \begin{itemize}
+        
+        \item Exemplo de definições de funções:
+
+    \end{itemize}
+    
+    \begin{lstlisting}[language=C]
+        int funcao1 (int x)
+        {
+            return x * 2;
+        }
+
+        void funcao2 (double x)
+        {
+            printf("%lf\n", x);
+        }
+    \end{lstlisting}
+        
+\end{frame}

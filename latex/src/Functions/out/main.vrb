@@ -1,0 +1,20 @@
+\frametitle{Definição}
+
+    \begin{itemize}
+
+        \item Exemplo de definições de funções:
+
+    \end{itemize}
+
+    \begin{lstlisting}[language=C]
+        int funcao1 (int x)
+        {
+            return x * 2;
+        }
+
+        void funcao2 (double x)
+        {
+            printf("%lf\n", x);
+        }
+    \end{lstlisting}
+
