@@ -14,17 +14,15 @@ int main ()
     for(; i >= 0; --i)
         printf("%d\n", i);
 
-    for(i = 0; i < 10)
-    {
-        printf("%d\n", i);
-    }
+    for(i = 0; i < 10; ++i)
+        printf("%d\n", i), i++;
 
     for(d = 0.1; d < 2.0; d += 1.0 / 3)
     {
         printf("%lf\n", d);
     }
 
-    for(d > 2.0; d -= 0.5)
+    for(d > 2.0; d -= 0.5; d +=)
     {
         printf("%lf\n", d);
     }

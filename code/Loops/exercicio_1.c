@@ -16,7 +16,7 @@ int main ()
         int primo = 1;
         
         // Caso o número i seja divisível por j (i % j == 0), este número não é primo
-        for(j = 2; j <= i / 2; ++j)
+        for(j = 2; j < i; ++j)
         {
             if(i % j == 0)
             {
@@ -26,7 +26,10 @@ int main ()
             }
         }
 
-        count += primo;
+        if(primo == 1)
+            count++;
+
+        //count += primo;
     }
 
 
